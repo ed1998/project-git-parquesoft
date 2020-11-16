@@ -12,17 +12,22 @@
 </head>
   <body>
     <h1>HTML Activity - Formulary</h1>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-      has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-      took a galley of type and scrambled it to make a type specimen book. It has survived not 
-      only five centuries, but also the leap into electronic typesetting, remaining essentially 
-      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-      including versions of Lorem Ipsum
-  </p>
+ <h2>Formulario de registro</h2>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Formulario -->
+
+    <form action="ejemplo.php" method="get">
+      <p>Nombre: <input type="text" name="nombre" size="40"></p>
+      <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+      <p>Sexo:
+        <input type="radio" name="hm" value="h"> Hombre
+        <input type="radio" name="hm" value="m"> Mujer
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+      </p>
+    </form>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
